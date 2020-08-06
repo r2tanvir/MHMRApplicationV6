@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="histogram-style.css">
+  </head>
+
+  <body>
+
+    <div class="background-tablet">
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                    <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> Bar Graph </h1>
+            <h2 id = "subtitle"> Date Range: 2 Months </h2>
+
+            <div class="sortBy">
+                    <p id="sortBytext">Sort by: </p>
+                    <button id="alpha" class="sortBybuttons" onclick="giveId(this.id)">Alphabetical (A-Z)</button>
+                    <button id="high" class="sortBybuttons" onclick="giveId(this.id)">Highest to lowest mention </button>
+                    <button id="pos" class="sortBybuttons" onclick="giveId(this.id)">Group by positive/negative</button>
+                    <button id="range" class="sortBybuttons" onclick="giveId(this.id)">Group by ranges</button>
+                    <button id="none" class="sortBybuttons" autofocus onclick="giveId(this.id)">No sorting </button>
+            </div>
+
+            <div class="categories">
+                  <p id="categoriestext">Categories: </p>
+                  <label class="categories-container">Top 10 words mentioned
+                          <input id="top-10" type="radio" checked="checked" name="radio" onclick="categoriesSelected(this.id)">
+                          <span class="categories-checkmark"></span>
+                  </label>
+                  <label class="categories-container">Physical health symptoms
+                          <input id = "health-symptoms" type="radio" name="radio" onclick="categoriesSelected(this.id)">
+                          <span class="categories-checkmark"></span>
+                  </label>
+                  <label class="categories-container">More description
+                          <input id = "more-description" type="radio" name="radio" onclick="categoriesSelected(this.id)">
+                          <span class="categories-checkmark"></span>
+                  </label>
+            </div>
+            <div class="placeholder-div">
+              <img id="placeholder-image" src="https://www.dropbox.com/s/xbllf4n6qus8z22/top10_random.png?raw=1" width="500px" height="360px" style="margin-left:100px">
+              <button id="image-button" onclick="location.href='../TextGraph/textgraph.html'"class="btn"></button>
+            </div>
+            <div class="summmary_buttons_vertical">
+            <div class="summary_buttons_horizontal">
+              <button class="button-purple" type="button" name="button" onclick="location.href='../WordCloud/wordcloud.html'">Word Cloud</button>
+              <button class="button-purple" type="button" name="button" onclick="location.href='../TextGraph/textgraph.html'">Text Graph</button>
+            </div>
+
+            <div class="summary_buttons_horizontal">
+              <button class="button-grey" type="button" name="button" onclick="location.href='../Histogram/histogram.html'">Bar Graph</button>
+              <button class="button-purple" type="button" name="button" onclick="location.href='../TextSummary/textsummary.html'">Text Summary</button>
+            </div>
+
+            <div class="summary_buttons_horizontal">
+              <button class="button-purple" type="button" name="button" onclick="location.href='../LineGraph/linegraph.html'">Line Graph</button>
+              <button class="button-purple" type="button" name="button" onclick="location.href='../ViewAll/viewall.html'">View All</button>
+            </div>
+            </div>
+
+    </div>
+
+    <script type="text/javascript" src="histogramjs.js"></script>
+
+
+  </body>
+</html>

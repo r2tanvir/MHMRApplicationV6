@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text Summary</title>
+    <link rel="stylesheet" href="textsummary-style.css">
+
+  </head>
+  <body>
+    <div class="background-tablet">
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                    <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> Text Summary </h1>
+            <h2 id = "subtitle"> Date Range: 2 Months </h2>
+
+            <div class="categories">
+                  <label class="categories-container">General summary
+                          <input id="gsummary" type="radio" checked="checked"  name="radio" onclick="categoriesSelected(this.id)">
+                          <span class="categories-checkmark"></span>
+                  </label>
+                  <label class="categories-container">Quantitative summary
+                          <input id = "qsummary" type="radio" name="radio" onclick="categoriesSelected(this.id)">
+                          <span class="categories-checkmark"></span>
+                  </label>
+            </div>
+
+            <ul id = "summary-list" class="summaries">
+              <li id="point1" style="padding-bottom:10px">The patient complained of pain and aches multiple times throughout the past 2 months</li>
+              <li id="point2" style="padding-bottom:10px">On most occasions, complaints of pain and aches were mentioned with “morning”</li>
+              <li id="point3" style="padding-bottom:10px">The patient complained a lot about being tired</li>
+              <li id="point4" style="padding-bottom:10px">The patient mentioned walking being easy multiple times</li>
+              </ul>
+
+              <div class="toggle_original">
+                <p style="font-size:17px">Change font colour</p>
+                <label class="switch">
+                          <input id = "toggle_button" type="checkbox" onclick="switchChecked(this.checked)">
+                          <span class="slider round"></span>
+                </label>
+                </div>
+
+              <div class="summmary_buttons_vertical">
+                      <div class="summary_buttons_horizontal">
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../WordCloud/wordcloud.html'">Word Cloud</button>
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../TextGraph/textgraph.html'">Text Graph</button>
+                      </div>
+
+                      <div class="summary_buttons_horizontal">
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../Histogram/histogram.html'">Bar Graph</button>
+                        <button class="button-grey" type="button" name="button"onclick="location.href='../TextSummary/textsummary.html'">Text Summary</button>
+                      </div>
+
+                      <div class="summary_buttons_horizontal">
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../LineGraph/linegraph.html'">Line Graph</button>
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../ViewAll/viewall.html'">View All</button>
+                      </div>
+              </div>
+
+    </div>
+    <script type="text/javascript" src="textsummaryjs.js"></script>
+
+
+  </body>
+</html>

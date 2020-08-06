@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="linegraph-style.css">
+    <title>Line Graph</title>
+  </head>
+  <body>
+    <div class="background-tablet">
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                    <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> Line Graph </h1>
+            <h2 id = "subtitle"> Date Range: 2 Months </h2>
+            <h3 id = "graph_title">"Pain" Mentioned in a Negative Manner over 2 months</h3>
+            <div class="placeholder-div">
+                    <img id="placeholder-image" src="https://www.dropbox.com/s/j43twdiisqsjo23/Line_graph_final.png?raw=1" width="95%" height="50%">
+                    <button id="morepain-button1" class="btn" onclick="location.href='../VideoNegative/videonegative.html'"></button>
+                    <button id="morepain-button2" class="btn" onclick="location.href='../VideoNegative/videonegative.html'"></button>
+
+            </div>
+              <ul style="list-style-type:circle;">
+                <li>No videos created</li>
+              </ul>
+              <ul>
+                  <li>Videos created but no mention of pain in a negative manner</li>
+              </ul>
+
+
+              <div class="summmary_buttons_vertical">
+                      <div class="summary_buttons_horizontal">
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../WordCloud/wordcloud.html'">Word Cloud</button>
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../TextGraph/textgraph.html'">Text Graph</button>
+                      </div>
+
+                      <div class="summary_buttons_horizontal">
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../Histogram/histogram.html'">Bar Graph</button>
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../TextSummary/textsummary.html'">Text Summary</button>
+                      </div>
+
+                      <div class="summary_buttons_horizontal">
+                        <button class="button-grey" type="button" name="button" onclick="location.href='../LineGraph/linegraph.html'">Line Graph</button>
+                        <button class="button-purple" type="button" name="button" onclick="location.href='../ViewAll/viewall.html'">View All</button>
+                      </div>
+              </div>
+
+
+    </div>
+    <script type="text/javascript">
+        function goBack() {
+        window.history.back();}
+
+
+
+      </script>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.background-tablet{
+    margin:auto;
+    height: 980px;
+    width: 50%;
+    background-color: #F7F7F7;
+    border: 3px solid black;
+    overflow: scroll;
+
+  }
+
+#home-icon{
+  position: absolute;
+  right: 0px;
+  padding: 30px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+#back_icon{
+  background-color: inherit;
+  margin-top: 17px;
+  margin-left: 10px;
+  border: none;
+  width:120px;
+  float:left;
+  cursor: pointer;
+  font-size:32px;
+  color: #C30239
+}
+#back_icon:hover{
+  background-color: #e7e7e7
+}
+#app-title{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: auto;
+  padding-top: 80px;
+  font-size: 30px;
+  font-weight: lighter;
+
+
+}
+#subtitle{
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 15px;
+  font-style:italic;
+  font-weight: lighter;
+
+
+}
+
+.sortBy{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 30px;
+  padding-left: 15px;
+  width: 100%;
+  height:5%;
+}
+.sortBybuttons{
+  margin-left: 5px;
+  font-size: 10.3px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: PaleVioletRed;
+}
+
+.sortBybuttons:focus {
+  background: PaleVioletRed;
+  -webkit-box-shadow: inset 0px 0px 5px black;
+     -moz-box-shadow: inset 0px 0px 5px black;
+          box-shadow: inset 0px 0px 5px black;
+   outline: none;
+}
+
+#sortBytext{
+  font-size: 18px;
+}
+.categories-container {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.categories-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.categories-checkmark {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+  border:1px solid black;
+}
+
+/* On mouse-over, add a grey background color */
+.categories-container:hover input ~ .categories-checkmark {
+  background-color: #ccc;
+  border:3px solid black;
+}
+
+/* When the radio button is checked, add a blue background */
+.categories-container input:checked ~ .categories-checkmark {
+  background-color: PaleVioletRed;
+}
+
+.categories{
+  padding-left: 15px;
+}
+#categoriestext{
+  font-size: 18px;
+
+}
+.placeholder-div{
+  position: relative;
+  padding-top: 30px;
+  width: 300px;
+  height:400px;
+}
+.placeholder-div .btn {
+  position: absolute;
+  top: 15%;
+  left: 85%;
+  width:50px;
+  height:251px;
+  outline: none;
+  background-color: Transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  border-color: inherit;
+}
+
+.placeholder-div .btn:hover {
+  /*border-color: black;*/
+}
+
+.button-purple{
+  background-color: #4D2457;
+  color: white;
+  padding: 5px;
+  border: 3px solid #4D2457;
+  width: 30%;
+  cursor: pointer;
+  margin-left: 25px;
+  font-size: 18px;
+  border-radius:25px;
+  margin-bottom: 8px;
+}
+.button-grey{
+  background-color: WhiteSmoke;
+  color: black;
+  padding: 5px;
+  border: 3px solid #4D2457;
+  width: 30%;
+  margin-left: 25px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius:25px;
+  margin-bottom: 8px;
+}
+.summary_buttons_horizontal{
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+}
+
+.summmary_buttons_vertical{
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding-top: 20px;
+  margin-left: 150px;
+}

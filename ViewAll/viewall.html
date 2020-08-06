@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>View All Summaries</title>
+    <link rel="stylesheet" href="viewall-style.css">
+
+  </head>
+  <body>
+
+
+    <div class="background-tablet">
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                    <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> View All Summaries </h1>
+            <h2 id = "subtitle"> Date Range: 2 Months </h2>
+
+            <div class="summary_buttons">
+                <button class="button-purple" type="button" name="button" onclick="location.href='../WordCloud/wordcloud.html'">Word Cloud</button>
+                <button class="button-purple" type="button" name="button" onclick="location.href='../TextGraph/textgraph.html'">Text Graph</button>
+                <button class="button-purple" type="button" name="button" onclick="location.href='../Histogram/histogram.html'">Bar Graph</button>
+                <button class="button-purple" type="button" name="button" onclick="location.href='../TextSummary/textsummary.html'">Text Summary</button>
+                <button class="button-purple" type="button" name="button" onclick="location.href='../LineGraph/linegraph.html'">Line Graph</button>
+                <button class="button-grey" type="button" name="button" onclick="location.href='../ViewAll/viewall.html'">View All</button>
+            </div>
+            <ul id = "summary-list" class="summaries">
+              <li id="point1" style="padding-bottom:10px">The patient complained of pain and aches multiple times throughout the past 2 months</li>
+              <li id="point2" style="padding-bottom:10px">On most occasions, complaints of pain and aches were mentioned with “morning”</li>
+              <li id="point3" style="padding-bottom:10px">The patient complained a lot about being tired</li>
+              <li id="point4" style="padding-bottom:10px">The patient mentioned walking being easy multiple times</li>
+              </ul>
+
+            <div id="image-wordcloud">
+              <p class = "graph_title">Most frequently mentioned words over 2 months</p>
+              <img src="https://www.dropbox.com/s/4qp10p2lww93n41/all_words_orginal.png?raw=1" width="400px" height="300px" style="margin-left:150px">
+              </div>
+
+              <div id="image-histogram">
+                <img src="https://www.dropbox.com/s/w3iwxtbl416pwdi/top10_random2.png?raw=1" width="400px" height="300px" style="margin-left:150px;padding-top:20px">
+              </div>
+
+              <div id="image-linegraph">
+                <p class = "graph_title">Pain Mentioned in a Negative Manner over 2 months</p>
+                <img src="https://www.dropbox.com/s/7p40frnwkbchjcx/linegraph_original.png?raw=1" width="75%" height="50%" style="padding-top:5px;margin-left:70px">
+              </div>
+              <div id="image-textgraph">
+                <p class = "graph_title">Distribution of Pain over 2 months</p>
+                <img src="https://www.dropbox.com/s/e7oxootfkdm1cwr/text_graph_uncolored_original.png?raw=1" width="75%" height="50%" style="padding-top:5px;margin-left:70px">
+              </div>
+
+    </div>
+        <script type="text/javascript">
+          function goBack() {
+          window.history.back();}
+        </script>
+  </body>
+</html>

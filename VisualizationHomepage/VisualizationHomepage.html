@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Choose Date Range</title>
+    <link rel="stylesheet" href="VisualizationHomepage-style.css">
+  </head>
+
+  <body>
+       <div class="background-tablet">
+
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                  <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> Choose Summary Date Range </h1>
+
+            <div class="videos-all">
+                  <div class = "videos-horizontal">
+                          <video class="videos" controls>
+                          <source src="https://www.dropbox.com/s/cusfsijdp8wv5lg/general.mp4?raw=1" type="video/mp4"></video>
+
+                          <video  class="videos" controls>
+                          <source src="https://www.dropbox.com/s/66xbxcxh5bsersm/lesspain1.mp4?raw=1" type="video/mp4"> </video>
+                  </div>
+
+                  <div class = "videos-horizontal">
+                          <video class="videos" controls>
+                          <source src="https://www.dropbox.com/s/x6z8sxdhxpcct18/morepain2.mp4?raw=1" type="video/mp4"></video>
+
+                          <video  class="videos" controls>
+                          <source src="https://www.dropbox.com/s/doa8dd4ohona3hl/morepain1.mp4?raw=1" type="video/mp4"></video>
+                  </div>
+
+                  <div class = "videos-horizontal">
+                          <video class="videos" controls>
+                          <source src="https://www.dropbox.com/s/9yuxy8ul0l7au3v/lesspain2.mp4?raw=1" type="video/mp4"></video>
+
+                          <video  class="videos" controls>
+                          <source src="https://www.dropbox.com/s/s28dt2q3jrt8d84/morepain3.mp4?raw=1" type="video/mp4"></video>
+                  </div>
+
+            </div>
+
+            <p id="message">I would like to see summaries over</p>
+
+            <div class="slidecontainer">
+                  <input type="range" min="0" max="25" value=0; class="slider" id="myRange">
+
+                  <p id="days"></p>
+            </div>
+            <div id = "view_summaries_button">
+            <button class="button-purple" type="button" name="View Summaries" onclick="location.href='../SummariesOption/summariesoption.html'">View Summaries</button>
+          </div>
+      </div>
+
+      <script type="text/javascript">
+          function goBack() {
+          window.history.back();}
+
+          var slider = document.getElementById("myRange");
+          var days = document.getElementById("days");
+          var progress = slider.value;
+          slider.value=0;
+          days.innerHTML="Slide the bar"
+                slider.oninput = function() {
+                        var progress = slider.value;
+                        if(progress==0){
+                          days.innerHTML="Slide the bar";}
+                        else if(progress == 1){
+                          days.innerHTML="5 Days"}
+                        else if (progress==2) {
+                          days.innerHTML="1 week"}
+                        else if (progress==3 || progress==4) {
+                          days.innerHTML=(progress-1) + " Weeks"}
+                        else if (progress==5 || progress == 6) {
+                          days.innerHTML = "1 month"}
+                        else if(progress == 7 || progress == 8){
+                          days.innerHTML = "1.5 months"}
+                        else if(progress == 9 || progress == 10){
+                          days.innerHTML = "2 months"}
+                        else if(progress == 11 || progress == 12){
+                          days.innerHTML = "2.5 months"}
+                        else if(progress == 13 || progress == 14){
+                          days.innerHTML = "3 months"}
+                        else if(progress == 15 || progress == 16){
+                          days.innerHTML = "3.5 months"}
+                        else if(progress == 17 || progress == 18){
+                          days.innerHTML = "4 months"}
+                        else if(progress == 19 || progress == 20){
+                          days.innerHTML = "4.5 months"}
+                        else if(progress == 21 || progress == 22){
+                          days.innerHTML = "5 months"}
+                        else if(progress == 23 || progress == 24){
+                          days.innerHTML = "5.5 months"}
+                        else if(progress == 25){
+                          days.innerHTML = "6 months"}
+                        }
+      </script>
+  </body>
+
+</html>

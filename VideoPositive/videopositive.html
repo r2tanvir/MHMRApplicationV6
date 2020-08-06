@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patient Videos</title>
+    <link rel="stylesheet" href="videopositive-style.css">
+
+  </head>
+  <body>
+    <div class="background-tablet">
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                    <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> View All Summaries </h1>
+            <h2 id = "subtitle"> Date Range: 2 Months </h2>
+            <h3 id="pain_title">Pain mentioned in a positive manner</h3>
+
+            <div class="videos-horizontal">
+                <video class="videos" controls>
+                <source src="https://www.dropbox.com/s/9yuxy8ul0l7au3v/lesspain2.mp4?raw=1" type="video/mp4"></video>
+                <p>Video 1/2</p>
+
+                <video  class="videos" controls>
+                <source src="https://www.dropbox.com/s/66xbxcxh5bsersm/lesspain1.mp4?raw=1" type="video/mp4"> </video>
+                <p>Video 2/2</p>
+
+            </div>
+
+    </div>
+        <script type="text/javascript">
+          function goBack() {
+          window.history.back();}
+        </script>
+  </body>
+</html>

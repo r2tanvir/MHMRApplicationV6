@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Patient Videos</title>
+    <link rel="stylesheet" href="videonegative-style.css">
+
+  </head>
+  <body>
+    <div class="background-tablet">
+            <div class="header">
+              <a href="../Homepage/homepage.html">
+              <img src="https://www.dropbox.com/s/iyjvtkt90h3x0el/home_icon.png?raw=1" alt="" width="40px" height="40px" style="padding:20px;float:right"></a>
+              <a href="../VideoAll/videoall.html">
+                <img src="https://www.dropbox.com/s/htpgccwcrb6k8n5/watch_video.png?raw=1"alt="" width="60px" height="60px" style="padding:9px;float:right"></a>
+                    <button id = "back_icon" type="button" name="button" onclick="goBack()">&laquo; Back</button>
+            </div>
+            <h1 id = "app-title"> Patient Videos </h1>
+            <h2 id = "subtitle"> Date Range: 2 Months </h2>
+            <h3 id="pain_title">Pain mentioned in a negative manner</h3>
+            <div class="videos-horizontal">
+                <video class="videos" controls>
+                <source src="https://www.dropbox.com/s/x6z8sxdhxpcct18/morepain2.mp4?raw=1" type="video/mp4"></video>
+                <p>Video 1/3</p>
+                <video  class="videos" controls>
+                <source src="https://www.dropbox.com/s/doa8dd4ohona3hl/morepain1.mp4?raw=1" type="video/mp4"> </video>
+                <p>Video 2/3</p>
+                <video  class="videos" controls>
+                <source src="https://www.dropbox.com/s/s28dt2q3jrt8d84/morepain3.mp4?raw=1" type="video/mp4"> </video>
+                <p>Video 3/3</p>
+
+            </div>
+
+    </div>
+        <script type="text/javascript">
+          function goBack() {
+          window.history.back();}
+        </script>
+  </body>
+</html>
